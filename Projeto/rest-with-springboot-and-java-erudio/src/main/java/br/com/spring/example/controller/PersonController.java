@@ -18,7 +18,7 @@ import br.com.spring.example.data.vo.v1.PersonVO;
 import br.com.spring.example.services.PersonServices;
 
 @RestController
-@RequestMapping("/person")
+@RequestMapping("/api/person/v1")
 public class PersonController {
 	
 		@Autowired

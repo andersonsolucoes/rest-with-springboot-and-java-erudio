@@ -1,0 +1,2 @@
+ALTER TABLE `person`
+ADD COLUMN bith_day date DEFAULT NULL;
