@@ -19,7 +19,7 @@ services:
     networks:
       - erudio-network
   rest-with-spring-boot-erudio:
-    image: spring-app
+    image: hendin2512/spring-app
     restart: always
     build: ./rest-with-springboot-and-java-erudio
     working_dir: /rest-with-springboot-and-java-erudio
