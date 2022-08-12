@@ -1,8 +1,11 @@
-package br.com.spring.example.data.vo.v1.secutiry;
+package br.com.spring.example.integrationtests.vo;
 
 import java.io.Serializable;
 import java.util.Objects;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class AccountCredentialsVO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -14,8 +17,6 @@ public class AccountCredentialsVO implements Serializable{
 		this.username = username;
 		this.password = password;
 	}
-	
-	public AccountCredentialsVO() {}
 
 	public String getUsername() {
 		return username;
@@ -32,6 +33,9 @@ public class AccountCredentialsVO implements Serializable{
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+
+	public AccountCredentialsVO() {}
 
 	@Override
 	public int hashCode() {

@@ -52,7 +52,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.and()
 					.cors()
 				.and()
-				.apply(new JwtConfigurer(tokenProvider)); 
+				.apply(new JwtConfigurer(tokenProvider));
 	}
 	 
 }
